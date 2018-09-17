@@ -1,3 +1,25 @@
-div {
-  background-color: blue;
+.header {
+  text-align: center;
+}
+
+.data-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+
+  div {
+    padding: 5px;
+  }
+
+  .data-form__label {
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+  }
+
+  .data-form__input {
+    max-width: 200px;
+    margin-left: 5px;
+  }
 }
