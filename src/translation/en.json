@@ -1,0 +1,11 @@
+{
+  "weight": "Weight",
+  "body_fat": "Body Fat %",
+  "total_tody_water": "Total Body Water %",
+  "muscle_mass": "Muscle Mass",
+  "physique_rating": "Physique Rating",
+  "bone_mineral_mass": "Bone Mineral Mass",
+  "basal_metabolic_rate": "Basal Metabolic Rate",
+  "metabolic_age": "Metabolic Age",
+  "visceral_fat": "Visceral Fat"
+}

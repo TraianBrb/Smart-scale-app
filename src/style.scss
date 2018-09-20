@@ -2,24 +2,31 @@
   text-align: center;
 }
 
-.data-form {
-  display: flex;
+.user-form,
+.scale-form {
+  display: inline-flex;
   flex-direction: column;
-  max-width: 500px;
+}
+
+.user-form__image {
+  display: block;
   margin: 0 auto;
+  margin-bottom: 10px;
+}
 
-  div {
-    padding: 5px;
-  }
+div {
+  padding: 5px;
+}
 
-  .data-form__label {
-    width: 150px;
-    display: inline-block;
-    text-align: right;
-  }
+.user-form__label,
+.scale-form__label {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+}
 
-  .data-form__input {
-    max-width: 200px;
-    margin-left: 5px;
-  }
+.user-form__input,
+.scale-form__input {
+  max-width: 200px;
+  margin-left: 5px;
 }
