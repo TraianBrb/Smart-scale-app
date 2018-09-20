@@ -32,7 +32,7 @@ class App extends React.Component {
         name: authData.user.displayName,
         uid: authData.user.uid
       },
-      () => this.syncDataBase()
+      () => this.updateUserData()
     );
   };
 
@@ -49,10 +49,17 @@ class App extends React.Component {
     this.setState({ uid: null });
   };
 
-  syncDataBase = () => {
+  updateUserData = () => {
     base.bindToState(`users/${this.state.uid}/userData`, {
       context: this,
       state: 'userData'
+    });
+  };
+
+  updateScaleData = () => {
+    base.bindToState(`users/${this.state.uid}/scaleData`, {
+      context: this,
+      state: 'scaleData'
     });
   };
 
@@ -74,9 +81,8 @@ class App extends React.Component {
           uid={this.state.uid}
           userData={this.state.userData}
         />
-        {this.state.scale.map(i => (
-          <ScaleForm key={i} name={i} />
-        ))}
+
+        <ScaleForm uid={this.state.uid} />
       </div>
     );
   }
